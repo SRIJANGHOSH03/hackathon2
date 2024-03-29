@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscription Plans Management</title>
+  <link rel="stylesheet" href="che.css">
+
+</head>
+<body>
+  <header>
+    <h1>TEKKEN SUBSCRIPTION MANAGEMENT</h1>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Plans</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+  <div class="container">
+    <div class="plan-container">
+      <div class="plan1">
+        <h2 class="basic">Basic</h2>
+        <ul>
+          <li>Price: $9.99/month</li>
+          <li>Billing Cycle: Monthly</li>
+          <li>Trial Period: 7 days</li>
+        </ul>
+        <p>For growing businesses with under 10 teammates that need a shared view of conversations.</p>
+        <button class="btn" onclick="subscribe('Basic')">Get Started</button>
+        <hr class="h1">
+        <ul style="list-style-type: disc;">
+          <li> Connect unlimited email, SMS, and social media accounts to Front</li>
+          <li> Assign, comment, and @mention</li>
+          <li> Enable most integrations (except CRM, Voice) and build your own.</li>
+          <li> Use basic rule templates to move, tag, and archive messages.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="plan-container">
+      <div class="plan2">
+        <h2>Pro</h2>
+        <ul>
+          <li>Price: $19.99/month</li>
+          <li>Billing Cycle: Monthly</li>
+          <li>Trial Period: 14 days</li>
+        </ul>
+        <p>For small teams looking to scale and optimize their customer<br> communication.</p>
+        <button class="btn" onclick="subscribe('Pro')">Get Started</button>
+        <hr class="h2">
+        <ul style="list-style-type: disc;">
+          <li>Enable any integration</li>
+          <li>Build custom rules</li>
+          <li>Automate workflows with SLAs and advanced workflow templates.</li>
+          <li>Measure response times, inbox volume, and trends with analytics.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="plan-container">
+      <div class="plan3">
+        <div class="popular-bar">
+          Most Popular
+        </div>
+        <h2>Enterprise</h2>
+        <ul>
+          <li>Price: $49.99/month</li>
+          <li>Billing Cycle: Monthly</li>
+          <li>Trial Period: 30 days</li>
+        </ul>
+        <p>For sophisticated organizations that require streamlined administration and centralized control</p>
+        <button class="btn" onclick="subscribe('Enterprise')">Get Started</button>
+        <hr class="h3">
+        <ul style="list-style-type: disc;">
+          <li>Streamline administration with centralized controls.</li>
+          <li>SAML-based single sign on (SSO).</li>
+          <li>Designated account team.</li>
+          <li>Tailored onboarding services.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>Contact Us:</p>
+    <p>Email: info@tekkensubscription.com</p>
+    <p>Phone: +1 (123) 456-7890</p>
+    <p>Address: 123 Main Street, City, Country</p>
+  </footer>
+  <script>
+    function subscribe(plan) {
+      // Here you can implement the subscription process, 
+      // such as sending a request to your server or showing a confirmation message.
+      alert("You have subscribed to the " + plan + " plan!");
+    }
+  </script>
+</body>
+</html>
